@@ -20,7 +20,7 @@ def main() -> None:
         raise RuntimeError("Please set the TELEGRAM_TOKEN environment variable")
 
     application = Application.builder().token(token).build()
-    application.add_handler(CommandHandler("инструкция", instruction))
+    application.add_handler(CommandHandler("instr", instruction))
 
     application.run_polling()
 
