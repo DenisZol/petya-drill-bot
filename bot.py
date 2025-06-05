@@ -14,6 +14,12 @@ async def instruction(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
     await update.message.reply_text(INSTRUCTION_TEXT)
 
 
+async def complain(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    await update.message.reply_text(
+        "Жалоба принята. Петя её проигнорирует в ближайшее время."
+    )
+
+
 def main() -> None:
     token = os.getenv("TELEGRAM_TOKEN")
     if not token:
@@ -21,6 +27,7 @@ def main() -> None:
 
     application = Application.builder().token(token).build()
     application.add_handler(CommandHandler("инструкция", instruction))
+    application.add_handler(CommandHandler("complain", complain))
 
     application.run_polling()
 

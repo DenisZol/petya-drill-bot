@@ -5,6 +5,7 @@ This is a simple Telegram bot built with [python-telegram-bot](https://github.co
 ## Features
 
 - `/инструкция` &mdash; sends drilling instructions from Petya.
+- `/complain` — acknowledges your complaint with a short reply.
 
 ## Usage
 
@@ -17,3 +18,4 @@ This is a simple Telegram bot built with [python-telegram-bot](https://github.co
    ```bash
    python bot.py
    ```
+4. Send `/инструкция` or `/complain` in chat to interact with the bot.
