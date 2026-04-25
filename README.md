@@ -4,8 +4,8 @@ This is a simple Telegram bot built with [python-telegram-bot](https://github.co
 
 ## Features
 
-- `/instr` &mdash; sends drilling instructions from Petya.
-- `/complain` &mdash; accepts your complaint, which Petya will promptly ignore.
+- `/instr` — sends drilling instructions from Petya.
+- `/complain` — accepts your complaint, which Petya will promptly ignore.
 
 ## Usage
 
@@ -20,3 +20,5 @@ This is a simple Telegram bot built with [python-telegram-bot](https://github.co
    ```
 4. Send the `/instr` command to receive instructions from Petya.
 5. Send the `/complain` command if you want to file a complaint.
+
+Тест Чат 25/04/26
